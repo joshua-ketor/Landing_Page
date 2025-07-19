@@ -1,0 +1,50 @@
+/* Custom font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #f8fafc;
+	color: #334155;
+}
+
+/* Custom modal styles (instead of alert) */
+.modal {
+	display: none;
+	position: fixed
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content {
+	background-color: #ffffff;
+	margin: auto;
+	padding: 2.5rem;
+	border-radius: 1rem;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+	position: relative;
+}
+
+.close-button {
+	position: absolute;
+	top: 1rem;
+	right: 1.5rem;
+	color: #94a3b8;
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.close-button:hover {
+	color: #64748b;
+}
